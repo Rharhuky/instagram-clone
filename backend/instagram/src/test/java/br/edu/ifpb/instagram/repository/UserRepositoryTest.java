@@ -1,7 +1,6 @@
-package br.edu.ifpb.instagram.service.impl.it;
+package br.edu.ifpb.instagram.repository;
 
 import br.edu.ifpb.instagram.model.entity.UserEntity;
-import br.edu.ifpb.instagram.repository.UserRepository;
 import org.hibernate.exception.ConstraintViolationException;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,7 @@ import static org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTest
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = NONE)
 @ActiveProfiles("it")
-public class UserRepositoryIT {
+public class UserRepositoryTest {
 
     @Autowired
     private UserRepository userRepository;

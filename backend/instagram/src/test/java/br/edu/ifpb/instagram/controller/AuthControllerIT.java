@@ -4,6 +4,7 @@ import br.edu.ifpb.instagram.model.request.LoginRequest;
 import br.edu.ifpb.instagram.model.request.UserDetailsRequest;
 import br.edu.ifpb.instagram.model.response.LoginResponse;
 import br.edu.ifpb.instagram.model.response.UserDetailsResponse;
+import br.edu.ifpb.instagram.security.SecurityTest;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -26,7 +27,7 @@ import static org.springframework.test.context.jdbc.Sql.ExecutionPhase.BEFORE_TE
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("it")
 @TestInstance(TestInstance.Lifecycle.PER_METHOD)
-class AuthControllerIT {
+class AuthControllerIT implements SecurityTest {
 
     @Autowired
     private TestRestTemplate testRestTemplate;
