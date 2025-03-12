@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:tc:mariadb:10.3.39:///instagram_db_test
+  jpa:
+    hibernate:
+      ddl-auto: update
