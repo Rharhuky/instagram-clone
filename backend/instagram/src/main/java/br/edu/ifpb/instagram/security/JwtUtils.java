@@ -15,7 +15,7 @@ import java.util.Date;
 public class JwtUtils {
 
     private final int jwtExpirationMs = 86400000; // 24 hours expiration time
-    private static final String SECRET_KEY = "umaChaveMuitoSeguraDePeloMenos64CaracteresParaHS512JwtAlgoritmo";
+    private static final String SECRET_KEY = "umaChaveMuitoSeguraDePeloMenos64CaracteresParaHS512JwtAlgoritmos";
 
     private final byte[] jwtSecret;
 
